@@ -88,3 +88,65 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+layoutPractice/Podfile
+layoutPractice/Podfile.lock
+layoutPractice/layoutPractice.xcworkspace/contents.xcworkspacedata
+layoutPractice/layoutPractice.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+layoutPractice/layoutPractice/DefaultDelegates/R.generated.swift
+layoutPractice/Pods/Manifest.lock
+layoutPractice/Pods/Pods.xcodeproj/project.pbxproj
+layoutPractice/Pods/R.swift/License
+layoutPractice/Pods/R.swift/rswift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/AssetCatalog.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/ColorResource.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/DataResource.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/FileResource.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/FontResource.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/ImageResource.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/NibResource.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/PropertyListResource.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/StoryboardResource.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/StringResource.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/Bundle+Extensions.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/ColorResource+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/DataResource+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/FileResource+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/FontResource+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/ImageResource+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/NibReference+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/ReuseIdentifier+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/SegueIdentifier+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/StoryboardReference+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Integrations/StringResource+Integrations.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/DeploymentTarget.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/LocaleReference.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/ModuleReference.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/NameCatalog.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/Reusable.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/StoryboardReference.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/StringParam+Extensions.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/StringParam.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/StringsTable.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/TypeReference.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/Unifiable.swift
+layoutPractice/Pods/R.swift/Sources/RswiftResources/Shared/ValidationError.swift
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-acknowledgements.markdown
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-acknowledgements.plist
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-dummy.m
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-frameworks-Debug-input-files.xcfilelist
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-frameworks-Debug-output-files.xcfilelist
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-frameworks-Release-input-files.xcfilelist
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-frameworks-Release-output-files.xcfilelist
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-frameworks.sh
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-Info.plist
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice-umbrella.h
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice.debug.xcconfig
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice.modulemap
+layoutPractice/Pods/Target Support Files/Pods-layoutPractice/Pods-layoutPractice.release.xcconfig
+layoutPractice/Pods/Target Support Files/R.swift/R.swift-dummy.m
+layoutPractice/Pods/Target Support Files/R.swift/R.swift-Info.plist
+layoutPractice/Pods/Target Support Files/R.swift/R.swift-prefix.pch
+layoutPractice/Pods/Target Support Files/R.swift/R.swift-umbrella.h
+layoutPractice/Pods/Target Support Files/R.swift/R.swift.debug.xcconfig
+layoutPractice/Pods/Target Support Files/R.swift/R.swift.modulemap
+layoutPractice/Pods/Target Support Files/R.swift/R.swift.release.xcconfig
