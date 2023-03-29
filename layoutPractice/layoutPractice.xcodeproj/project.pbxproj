@@ -12,6 +12,8 @@
 		393AF7FF29CE1DCF00DAD8D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393AF7FE29CE1DCF00DAD8D9 /* Assets.xcassets */; };
 		3950E4B329CE274800D9628B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3950E4B229CE274800D9628B /* Launch Screen.storyboard */; };
 		3950E4B629CE286800D9628B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950E4B529CE286800D9628B /* R.generated.swift */; };
+		3950E4B829D2044F00D9628B /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3950E4B729D2044F00D9628B /* Homepage.storyboard */; };
+		3950E4BA29D2048900D9628B /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950E4B929D2048900D9628B /* HomePageVC.swift */; };
 		FFCFC2CD59ACBA7F27573BC6 /* Pods_layoutPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014C8C2FC3BD146C01C078C3 /* Pods_layoutPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		393AF80329CE1DCF00DAD8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3950E4B229CE274800D9628B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3950E4B529CE286800D9628B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		3950E4B729D2044F00D9628B /* Homepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		3950E4B929D2048900D9628B /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		80C1319DC66C3861BE658307 /* Pods-layoutPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-layoutPractice.release.xcconfig"; path = "Target Support Files/Pods-layoutPractice/Pods-layoutPractice.release.xcconfig"; sourceTree = "<group>"; };
 		D852807B1A0F5EF47138145A /* Pods-layoutPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-layoutPractice.debug.xcconfig"; path = "Target Support Files/Pods-layoutPractice/Pods-layoutPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +113,7 @@
 		39CDEE6F29CE1F4D00AF0918 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3950E4B929D2048900D9628B /* HomePageVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 		39CDEE7029CE1F7700AF0918 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				3950E4B729D2044F00D9628B /* Homepage.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3950E4B329CE274800D9628B /* Launch Screen.storyboard in Resources */,
+				3950E4B829D2044F00D9628B /* Homepage.storyboard in Resources */,
 				393AF7FF29CE1DCF00DAD8D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +303,7 @@
 			files = (
 				393AF7F629CE1DCE00DAD8D9 /* AppDelegate.swift in Sources */,
 				393AF7F829CE1DCE00DAD8D9 /* SceneDelegate.swift in Sources */,
+				3950E4BA29D2048900D9628B /* HomePageVC.swift in Sources */,
 				3950E4B629CE286800D9628B /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
