@@ -242,10 +242,10 @@
             </objects>
             <point key="canvasLocation" x="1870.9923664122136" y="-35.211267605633807"/>
         </scene>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="lTq-Hh-G4e">
             <objects>
-                <viewController id="X1p-az-QP1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductPageController" id="X1p-az-QP1" customClass="ProductViewController" customModule="layoutPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YR4-uX-gs3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,11 +255,15 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hIY-Up-GYe">
                                     <size key="itemSize" width="393" height="542"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uvy-ry-wfq">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FCK-La-agT"/>
@@ -271,6 +275,9 @@
                             <constraint firstItem="jfe-Bd-ygS" firstAttribute="leading" secondItem="FCK-La-agT" secondAttribute="leading" id="tS0-w8-KFx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productCollectionTable" destination="jfe-Bd-ygS" id="V9g-Mn-pMP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeQ-3J-c2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,17 +13,17 @@ class FlipkartWomenClothVC: UIViewController {
     
     //MARK: LOCAL VARIABLES
     var data: [ClothDetails] = [
-        ClothDetails(clothImage: "blacktop", clothtype: "Rare", clothName: "Solid Black Tops", clothPrice: 1199, discount: 53,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "whitetop", clothtype: "Aelomart", clothName: "Casual Half Sleeve Stripped Top", clothPrice: 1599, discount: 75,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "pinktop", clothtype: "Aurelia", clothName: "Pink Top", clothPrice: 1999, discount: 65,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "women4", clothtype: "Rare", clothName: "Printed Straight Women's Kurti", clothPrice: 1999, discount: 70,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "brucellatop", clothtype: "Rare", clothName: "Brucella Top", clothPrice: 3000, discount: 56,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "orangetop", clothtype: "Rare", clothName: "Orange Top", clothPrice: 2000, discount: 45,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "women5", clothtype: "Rare", clothName: "Kurti", clothPrice: 1999, discount: 70,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "coffeetop", clothtype: "Rare", clothName: "Coffee", clothPrice: 800, discount: 30,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "women5", clothtype: "Rare", clothName: "Solid Black Tops", clothPrice: 5999, discount: 60,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "women4", clothtype: "Rare", clothName: "Solid Black Tops", clothPrice: 2999, discount: 59,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
-        ClothDetails(clothImage: "women5", clothtype: "Rare", clothName: "Solid Black Tops", clothPrice: 999, discount: 76,liked: false, images: ["blacktop", "whitetop", "pinktop"]),
+        ClothDetails(clothImage: "blacktop", clothtype: "Rare", clothName: "Solid Black Tops", clothPrice: 1199, discount: 53,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "whitetop", clothtype: "Aelomart", clothName: "Casual Half Sleeve Stripped Top", clothPrice: 1599, discount: 75,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "pinktop", clothtype: "Aurelia", clothName: "Pink Top", clothPrice: 1999, discount: 65,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "women4", clothtype: "Rare", clothName: "Printed Straight Women's Kurti", clothPrice: 1999, discount: 70,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "brucellatop", clothtype: "Rare", clothName: "Brucella Top", clothPrice: 3000, discount: 56,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "orangetop", clothtype: "Rare", clothName: "Orange Top", clothPrice: 2000, discount: 45,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "women5", clothtype: "Rare", clothName: "Kurti", clothPrice: 1999, discount: 70,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "coffeetop", clothtype: "Rare", clothName: "Coffee", clothPrice: 800, discount: 30,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "women5", clothtype: "Rare", clothName: "Solid Black Tops", clothPrice: 5999, discount: 60,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "women4", clothtype: "Rare", clothName: "Solid Black Tops", clothPrice: 2999, discount: 59,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
+        ClothDetails(clothImage: "women5", clothtype: "Rare", clothName: "Solid Black Tops", clothPrice: 999, discount: 76,liked: false, images: ["blacktop", "whitetop", "pinktop"], offers: ["Flat 10% off* with digibank by CBC >", "Extra 5% off Axis Bank Buzz credit Card"]),
     ]
     
     //MARK: LIFECYCLES
@@ -81,7 +81,7 @@ extension FlipkartWomenClothVC: UICollectionViewDataSource {
 extension FlipkartWomenClothVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let flipkartStoryboard = UIStoryboard(name: "FlipkartStoryboard", bundle: nil)
-        guard let productVC = flipkartStoryboard.instantiateViewController(withIdentifier: "ProductVC") as? ProductVC else { return  }
+        guard let productVC = flipkartStoryboard.instantiateViewController(withIdentifier: "ProductPageController") as? ProductViewController else { return  }
         productVC.retriedData = data[indexPath.row]
         self.navigationController?.pushViewController(productVC, animated: true)
     }

@@ -14,5 +14,6 @@ struct ClothDetails {
     var discount: Int
     var liked: Bool
     var images: [String]
+    var offers: [String]
 }
 
