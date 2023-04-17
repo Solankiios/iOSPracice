@@ -12,6 +12,7 @@ extension UILabel {
     func addTrailing(image: UIImage, text:String) {
         let attachment = NSTextAttachment()
         attachment.image = image
+        attachment.image?.withTintColor(UIColor.white)
 
         let attachmentString = NSAttributedString(attachment: attachment)
         let string = NSMutableAttributedString(string: text, attributes: [:])

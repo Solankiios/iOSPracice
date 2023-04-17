@@ -170,7 +170,7 @@ struct _R {
     }
   }
 
-  /// This `_R.nib` struct is generated, and contains static references to 7 nibs.
+  /// This `_R.nib` struct is generated, and contains static references to 8 nibs.
   struct nib {
     let bundle: Foundation.Bundle
 
@@ -184,7 +184,7 @@ struct _R {
     var featurejobCollectionViewCell: RswiftResources.NibReferenceReuseIdentifier<FeaturejobCVC, FeaturejobCVC> { .init(name: "FeaturejobCollectionViewCell", bundle: bundle, identifier: "featureCollectionCell") }
 
     /// Nib `HeaderFlipkart`.
-    var headerFlipkart: RswiftResources.NibReferenceReuseIdentifier<CollectionReusableView, CollectionReusableView> { .init(name: "HeaderFlipkart", bundle: bundle, identifier: "HeaderFlipkart") }
+    var headerFlipkart: RswiftResources.NibReferenceReuseIdentifier<HeaderFlipkart, HeaderFlipkart> { .init(name: "HeaderFlipkart", bundle: bundle, identifier: "HeaderFlipkart") }
 
     /// Nib `OfferTableViewCell`.
     var offerTableViewCell: RswiftResources.NibReferenceReuseIdentifier<OfferTableViewCell, OfferTableViewCell> { .init(name: "OfferTableViewCell", bundle: bundle, identifier: "OfferTableCell") }
@@ -192,21 +192,24 @@ struct _R {
     /// Nib `ProductDetailHeaderCollectionReusableView`.
     var productDetailHeaderCollectionReusableView: RswiftResources.NibReferenceReuseIdentifier<ProductDetailHeaderCollectionReusableView, ProductDetailHeaderCollectionReusableView> { .init(name: "ProductDetailHeaderCollectionReusableView", bundle: bundle, identifier: "productDetailsHeader") }
 
+    /// Nib `ProductImageCollectionViewCell`.
+    var productImageCollectionViewCell: RswiftResources.NibReferenceReuseIdentifier<ProductImageCollectionViewCell, ProductImageCollectionViewCell> { .init(name: "ProductImageCollectionViewCell", bundle: bundle, identifier: "ProductImageCell") }
+
     /// Nib `ProductPageCollectionViewCell`.
     var productPageCollectionViewCell: RswiftResources.NibReferenceReuseIdentifier<ProductPageCollectionViewCell, ProductPageCollectionViewCell> { .init(name: "ProductPageCollectionViewCell", bundle: bundle, identifier: "productPageCell") }
 
     func validate() throws {
       if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "heart.fill") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'heart.fill' is used in nib 'ClothesCollectionViewCell', but couldn't be loaded.") } }
       if UIKit.UIImage(named: "women4", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'women4' is used in nib 'ClothesCollectionViewCell', but couldn't be loaded.") }
-      if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "arrow.down.doc") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'arrow.down.doc' is used in nib 'HeaderFlipkart', but couldn't be loaded.") } }
-      if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "line.3.horizontal.decrease") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'line.3.horizontal.decrease' is used in nib 'HeaderFlipkart', but couldn't be loaded.") } }
-      if UIKit.UIImage(named: "brucellatop", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'brucellatop' is used in nib 'ProductDetailHeaderCollectionReusableView', but couldn't be loaded.") }
+      if UIKit.UIImage(named: "whitetop", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'whitetop' is used in nib 'ProductImageCollectionViewCell', but couldn't be loaded.") }
       if UIKit.UIImage(named: "flipkartassured", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'flipkartassured' is used in nib 'ProductPageCollectionViewCell', but couldn't be loaded.") }
-      if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star.fill") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'star.fill' is used in nib 'ProductPageCollectionViewCell', but couldn't be loaded.") } }
+      if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "heart.fill") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'heart.fill' is used in nib 'ProductPageCollectionViewCell', but couldn't be loaded.") } }
+      if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "rectangle.grid.2x2") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'rectangle.grid.2x2' is used in nib 'ProductPageCollectionViewCell', but couldn't be loaded.") } }
+      if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'star' is used in nib 'ProductPageCollectionViewCell', but couldn't be loaded.") } }
     }
   }
 
-  /// This `_R.reuseIdentifier` struct is generated, and contains static references to 8 reuse identifiers.
+  /// This `_R.reuseIdentifier` struct is generated, and contains static references to 10 reuse identifiers.
   struct reuseIdentifier {
 
     /// Reuse identifier `ClothesCollectionViewCell`.
@@ -219,7 +222,7 @@ struct _R {
     let featurejobcell: RswiftResources.ReuseIdentifier<FeatureJobCellTableViewCell> = .init(identifier: "featurejobcell")
 
     /// Reuse identifier `HeaderFlipkart`.
-    let headerFlipkart: RswiftResources.ReuseIdentifier<CollectionReusableView> = .init(identifier: "HeaderFlipkart")
+    let headerFlipkart: RswiftResources.ReuseIdentifier<HeaderFlipkart> = .init(identifier: "HeaderFlipkart")
 
     /// Reuse identifier `OfferTableCell`.
     let offerTableCell: RswiftResources.ReuseIdentifier<OfferTableViewCell> = .init(identifier: "OfferTableCell")
@@ -227,11 +230,17 @@ struct _R {
     /// Reuse identifier `productDetailsHeader`.
     let productDetailsHeader: RswiftResources.ReuseIdentifier<ProductDetailHeaderCollectionReusableView> = .init(identifier: "productDetailsHeader")
 
+    /// Reuse identifier `ProductImageCell`.
+    let productImageCell: RswiftResources.ReuseIdentifier<ProductImageCollectionViewCell> = .init(identifier: "ProductImageCell")
+
     /// Reuse identifier `productPageCell`.
     let productPageCell: RswiftResources.ReuseIdentifier<ProductPageCollectionViewCell> = .init(identifier: "productPageCell")
 
-    /// Reuse identifier `ProductsVCell`.
-    let productsVCell: RswiftResources.ReuseIdentifier<ProductsImagesVCell> = .init(identifier: "ProductsVCell")
+    /// Reuse identifier `ProductTableCell`.
+    let productTableCell: RswiftResources.ReuseIdentifier<ProductTableCell> = .init(identifier: "ProductTableCell")
+
+    /// Reuse identifier `SizeCollectionViewCell`.
+    let sizeCollectionViewCell: RswiftResources.ReuseIdentifier<SizeCollectionViewCell> = .init(identifier: "SizeCollectionViewCell")
   }
 
   /// This `_R.storyboard` struct is generated, and contains static references to 6 storyboards.
@@ -293,15 +302,16 @@ struct _R {
 
       let name = "FlipkartStoryboard"
 
-      var productPageController: RswiftResources.StoryboardViewControllerIdentifier<ProductViewController> { .init(identifier: "ProductPageController", storyboard: name, bundle: bundle) }
+      var productPageController: RswiftResources.StoryboardViewControllerIdentifier<ProductDetailsVC> { .init(identifier: "ProductPageController", storyboard: name, bundle: bundle) }
       var productVC: RswiftResources.StoryboardViewControllerIdentifier<ProductVC> { .init(identifier: "ProductVC", storyboard: name, bundle: bundle) }
 
       func validate() throws {
         if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "cart.fill") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'cart.fill' is used in storyboard 'FlipkartStoryboard', but couldn't be loaded.") } }
         if UIKit.UIImage(named: "flipkartassured", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'flipkartassured' is used in storyboard 'FlipkartStoryboard', but couldn't be loaded.") }
         if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "magnifyingglass") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'magnifyingglass' is used in storyboard 'FlipkartStoryboard', but couldn't be loaded.") } }
-        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star.fill") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'star.fill' is used in storyboard 'FlipkartStoryboard', but couldn't be loaded.") } }
-        if productPageController() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'productPageController' could not be loaded from storyboard 'FlipkartStoryboard' as 'ProductViewController'.") }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "rectangle.grid.2x2") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'rectangle.grid.2x2' is used in storyboard 'FlipkartStoryboard', but couldn't be loaded.") } }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'star' is used in storyboard 'FlipkartStoryboard', but couldn't be loaded.") } }
+        if productPageController() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'productPageController' could not be loaded from storyboard 'FlipkartStoryboard' as 'ProductDetailsVC'.") }
         if productVC() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'productVC' could not be loaded from storyboard 'FlipkartStoryboard' as 'ProductVC'.") }
       }
     }

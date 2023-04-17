@@ -15,5 +15,12 @@ struct ClothDetails {
     var liked: Bool
     var images: [String]
     var offers: [String]
+    var reviewNumbers: Int
+    var sizes: [sizesOfCloths]
+    var rating: Float
 }
 
+struct SizeDetails {
+    var size: String
+    var isAvaiable: Bool
+}

@@ -7,8 +7,11 @@
 
 import UIKit
 
+protocol LikeButtonState {
+    func onLikeButtonClick(_ index: Int) -> Bool
+}
+
 class ClothesCollectionViewCell: UICollectionViewCell {
-    
     //MARK: IBOUTLETS
     @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var clothImage: UIImageView!
@@ -26,11 +29,12 @@ class ClothesCollectionViewCell: UICollectionViewCell {
         return UINib(nibName: "ClothesCollectionViewCell", bundle: nil)
     }
     
-    var likeTap: (() -> ())?
+    var isLiked: Bool = false
+    
+    var delegate: LikeButtonState?
     //MARK: LIFECYCLE
     override func awakeFromNib() {
         super.awakeFromNib()
-        likeBtn.addTarget(self, action: #selector(likeCloth(_:)), for: .touchUpInside)
     }
     
     
@@ -42,10 +46,6 @@ class ClothesCollectionViewCell: UICollectionViewCell {
         clothPrice.attributedText = getPrice(price: data.clothPrice)
         clothDiscout.text = "₹\(data.discount)% off"
         clothDPrice.text = getDiscountedPrice(price: data.clothPrice, discount: data.discount)
-        //outerView.layer.borderWidth = 0.5
-        //outerView.layer.borderColor = UIColor.gray.cgColor
-        
-        
     }
     //MARK: PRIVATE FUNCTIONS
     private func getDiscountedPrice(price: Int, discount: Int) -> String {
@@ -59,10 +59,8 @@ class ClothesCollectionViewCell: UICollectionViewCell {
         return attributeString
     }
     
-    
-    @IBAction private func likeCloth(_ sender: UIButton) {
-        guard let likeTap else { return }
-        likeTap()
+    @IBAction func likeBtnTouch(_ sender: Any) {
+         guard let delegate = delegate else { return }
+        likeBtn.tintColor = delegate.onLikeButtonClick(likeBtn.tag) ? .red : .gray
     }
 }
-

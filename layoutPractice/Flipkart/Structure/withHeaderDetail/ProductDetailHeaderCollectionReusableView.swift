@@ -13,7 +13,6 @@ class ProductDetailHeaderCollectionReusableView: UICollectionReusableView {
     
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -31,7 +30,8 @@ class ProductDetailHeaderCollectionReusableView: UICollectionReusableView {
         super.layoutSubviews()
     }
     
-    func configHeader() {
-        
+   
+    func configHeader(data: String) {
+        productImage.image = UIImage(named: data)
     }
 }

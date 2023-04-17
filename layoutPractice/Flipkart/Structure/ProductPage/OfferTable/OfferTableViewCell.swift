@@ -8,24 +8,21 @@
 import UIKit
 
 class OfferTableViewCell: UITableViewCell {
-
+    
+    //MARK: IBOUTLETS
+    @IBOutlet weak var offer: UILabel!
+    //MARK: LOCAL VARIABLES
     static let identifier = "OfferTableCell"
     static func nib() -> UINib {
         return UINib(nibName: "OfferTableViewCell", bundle: nil)
     }
-    @IBOutlet weak var offer: UILabel!
     
+    //MARK: LIFECYCLE
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
+    //MARK: FUNCTIONS
     func configCell(data: String) {
         offer.addLeading(image: UIImage(systemName: "tag") ?? UIImage(), text: data)
     }
